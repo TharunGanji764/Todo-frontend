@@ -1,0 +1,24 @@
+.form-container {
+  max-height: 100%;
+}
+.todo-container {
+  border-radius: 12px;
+  background-color: #ded4e8;
+}
+.todo-input {
+  outline: none;
+  border: 1px solid black;
+}
+
+.todo-list {
+  list-style-type: none;
+  max-width: 100%;
+}
+
+.todo-container form h1 {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+.priority {
+  height: 30px;
+}

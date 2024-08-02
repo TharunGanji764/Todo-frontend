@@ -1,0 +1,37 @@
+.register-form-container {
+  background-image: url("https://colorlib.com/etc/lf/Login_v5/images/bg-01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.register-form {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-size: 14px;
+  position: relative;
+  left: 6px;
+}
+.heading-txt {
+  font-size: 24px;
+}
+.input-form {
+  width: 320px;
+  margin: 18px;
+  position: relative;
+}
+.input-field {
+  padding: 6px;
+  border-radius: 50px;
+  border: 1px solid black;
+  outline: none;
+}
+.show-password {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
