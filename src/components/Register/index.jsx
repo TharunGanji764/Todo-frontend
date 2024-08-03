@@ -17,7 +17,7 @@ const Register = () => {
   const onSubmitForm = async (e) => {
     e.preventDefault();
     try {
-      const url = "https://todo-1vp3.onrender.com/todo/auth/register";
+      const url = "https://todo-backend-ee4y.onrender.com/todo/auth/register";
       const options = {
         method: "POST",
         headers: {

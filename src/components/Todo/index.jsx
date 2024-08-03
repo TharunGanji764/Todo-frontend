@@ -11,7 +11,7 @@ const Todo = () => {
   const [priority, setpriority] = useState("low");
 
   const getData = useCallback(async () => {
-    const url = "https://todo-1vp3.onrender.com/todo/todos";
+    const url = "https://todo-backend-ee4y.onrender.com/todo/todos";
     const options = {
       method: "GET",
       headers: {
@@ -53,7 +53,7 @@ const Todo = () => {
         edit: false,
         priority: priority,
       };
-      const url = "https://todo-1vp3.onrender.com/todo/todos";
+      const url = "https://todo-backend-ee4y.onrender.com/todo/todos";
       const options = {
         method: "POST",
         headers: {
@@ -71,7 +71,7 @@ const Todo = () => {
   };
 
   const onDeleteTodo = async (id) => {
-    const url = `https://todo-1vp3.onrender.com/todo/todos/${id}`;
+    const url = `https://todo-backend-ee4y.onrender.com/todo/todos/${id}`;
     const options = {
       method: "DELETE",
       headers: {
@@ -92,7 +92,7 @@ const Todo = () => {
   };
 
   const updateTodo = async (value, id, priority) => {
-    const url = `https://todo-1vp3.onrender.com/todo/todos/${id}`;
+    const url = `https://todo-backend-ee4y.onrender.com/todo/todos/${id}`;
     const options = {
       method: "PUT",
       headers: {
