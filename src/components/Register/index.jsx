@@ -7,11 +7,11 @@ const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const onSubmitSuccess = (message) => {
-    console.log(message);
+    alert("User Registered Successfully")
   };
 
   const onSubmitFailure = (error) => {
-    console.log(error);
+    alert(error)
   };
 
   const onSubmitForm = async (e) => {
@@ -33,7 +33,7 @@ const Register = () => {
         onSubmitFailure(data.error);
       }
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   };
 
