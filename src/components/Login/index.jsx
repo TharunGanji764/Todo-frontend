@@ -25,7 +25,7 @@ const Login = () => {
 
   const onSubmitFailure = (err) => {
     setError({ errorMsg: err });
-    console.log(error);
+    alert(error)
   };
 
   const onSubmitForm = async (e) => {
