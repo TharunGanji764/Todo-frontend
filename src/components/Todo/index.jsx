@@ -8,7 +8,7 @@ const Todo = () => {
   const token = Cookies.get("jwt_token");
   const [todo, setTodo] = useState("");
   const [todoList, setTodoList] = useState([]);
-  const [priority, setpriority] = useState("low");
+  const [priority, setpriority] = useState("pending");
 
   const getData = useCallback(async () => {
     const url = "https://todo-backend-ee4y.onrender.com/todo/todos";
@@ -134,9 +134,9 @@ const Todo = () => {
               onChange={(e) => setpriority(e.target.value)}
               className="ms-2 priority"
             >
-              <option value="low">Low</option>
-              <option value="medium">Medium</option>
-              <option value="high">High</option>
+              <option value="pending">Pending</option>
+              <option value="inprogress">In Progress</option>
+              <option value="completed">Completed</option>
             </select>
             <button className="btn btn-primary ms-2" type="submit">
               Add Todo
